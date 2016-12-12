@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editModelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Zmień imiennictwo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/dialogButtonNeutral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Zaniechaj "
+        android:layout_below="@+id/editModelValue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+
+    <Button
+        android:id="@+id/dialogButtonNegative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Wyklucz "
+        android:layout_alignBaseline="@+id/dialogButtonNeutral"
+        android:layout_alignBottom="@+id/dialogButtonNeutral"
+        android:layout_toStartOf="@+id/editModelName" />
+
+    <Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Przemień "
+        android:layout_alignBaseline="@+id/dialogButtonNeutral"
+        android:layout_alignBottom="@+id/dialogButtonNeutral"
+        android:layout_toEndOf="@+id/editModelName" />
+
+    <EditText
+        android:id="@+id/editModelValue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Przekształć wartość"
+        android:layout_below="@+id/editModelName"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
